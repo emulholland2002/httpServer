@@ -7,9 +7,10 @@
 
 class BindingSocket: public Socket {
   public:
-    BindingSocket(int domain, int service, int protocol, int port, u_long interface) 
-      : Socket(domain, service, protocol, port, interface);
+    // constructor
+    BindingSocket(int domain, int service, int protocol, int port, u_long interface);
+    // virtual func from parent 
     int network_connect(int sock, struct sockaddr_in address);
-}
+};
 
 #endif /* BindingSocket_hpp */

@@ -20,12 +20,13 @@ class Socket {
     
     // virtual func to connect to a network
     virtual int network_connect(int sock, struct sockaddr_in address) = 0;
-    void test_connection(int);
+    void test_connection(int conn);
 
     // getter funcs
     struct sockaddr_in get_address();
     int get_sock();
     int get_connection();
+    void set_connection(int conn);
 };
 
 #endif /* Socket_hpp */

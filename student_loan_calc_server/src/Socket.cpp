@@ -9,10 +9,6 @@ Socket::(int domain, int service, int protocol, int port, u_long interface) {
   // establish socket
   sock = socket(domain, service, protocol);
   test_connection(socket);
-
-  // establish network connection
-  connection = network_connect(sock, address);
-  test_connection(connection);
 }
 
 // test connection virtual func
@@ -35,4 +31,9 @@ Socket::get_sock() {
 
 Socket::get_connection() {
   return connection;
+}
+
+// setter funcs
+void Socket::set_connection(int conn) {
+  connection = conn;
 }
