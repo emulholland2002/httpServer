@@ -11,3 +11,5 @@ class BindingSocket: public Socket {
       : Socket(domain, service, protocol, port, interface);
     int network_connect(int sock, struct sockaddr_in address);
 }
+
+#endif /* BindingSocket_hpp */
