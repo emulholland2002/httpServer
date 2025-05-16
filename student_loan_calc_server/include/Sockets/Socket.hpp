@@ -1,17 +1,17 @@
 #ifndef SOCKET_HPP
 #define SOCKET_HPP
 
-# include <iostream>
+#include <iostream>
 #include <stdio.h>
 #include <netinet/in.h>
-#include <sys/soicket.h>
+#include <sys/socket.h>
 
 class Socket {
   private:
     struct sockaddr_in address;
     int connection;
     int sock;
-  public
+  public:
     // default constructor:
     //  - domain (IPv6) 
     //  - type of service (virutal circuit service) 
