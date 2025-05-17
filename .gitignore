@@ -30,3 +30,14 @@
 *.exe
 *.out
 *.app
+
+# Build artifacts
+/build/
+/bin/
+*.exe
+*.o
+*.out
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
