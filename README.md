@@ -62,10 +62,9 @@ make
 Once running, access the server using:
 
 ```bash
-curl http://localhost:PORT
-HTTP/1.1 200 OK
-Content-Type: text/plain
-Hello, this is a raw C++ HTTP server!
+curl http://localhost:80
+OR
+in browser: http://localhost:80
 ```
 
 ## 📚 Key Concepts
