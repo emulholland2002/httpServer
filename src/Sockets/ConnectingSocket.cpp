@@ -1,4 +1,4 @@
-#include "../../include/Sockets/ConnestingSocket.hpp"
+#include "../../include/Sockets/ConnectingSocket.hpp"
 
 // constructor
 ConnestingSocket::ConnestingSocket(int domain, int service, int protocol, int port, u_long interface) :
