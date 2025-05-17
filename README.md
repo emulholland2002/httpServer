@@ -18,7 +18,6 @@ server/
 │         ├── ConnectingSocket.hpp
 │         └── Socket.hpp
 ├── src/
-│     ├── main.cpp # Program entry point
 │     ├── Server/
 │     │     ├── Server.cpp
 │     │     ├── TestServer.cpp
@@ -42,11 +41,9 @@ server/
 ### Steps
 
 ```bash
-cd server
-mkdir build && cd build
 cmake ..
 make
-./server
+./bin/server
 ```
 
 ## 🌐 Features
