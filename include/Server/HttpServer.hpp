@@ -1,12 +1,12 @@
-#ifndef TestServer_hpp
-#define TestServer_hpp
+#ifndef HttpServer_hpp
+#define HttpServer_hpp
 
 #include <stdio.h>
 #include <unistd.h>
 
 #include "../../include/Server/Server.hpp"
 
-class TestServer: public Server {
+class HttpServer: public Server {
   private:
     char buffer[30000] = {0};
     int new_socket;
@@ -15,8 +15,8 @@ class TestServer: public Server {
     void handler();
     void responder();
   public:
-    TestServer();
+    HttpServer();
     void launch();
 };
 
-#endif /* TestServer_hpp */
+#endif /* HttpServer_hpp */
